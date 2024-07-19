@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="syle.css">
+        
+    </head>
+    <body>
+        <form>
+            <h2>Contact Us</h2>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Enter &nbsp Questions</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Enter &nbsp Problems</label>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Create">
+            </div>
+            <p>Wrong Press? Press <a href="index.html">Home</a> to go back</p>
+        </form>
+
+        <script>
+            let label = document.querySelectorAll
+            ("label").forEach(label => {label.innerHTML = label.innerText.split('').map((letters,i) => `<span style = "transition-delay: ${i * 50}ms">${letters} </span> `).join(` `);
+        });
+        </script>
+    </body>
+</html>
